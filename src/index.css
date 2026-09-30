@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+/* Mapeo de fuentes para Tailwind v4 */
+@theme {
+  --font-sans: 'Raleway', sans-serif;
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+:root {
+  --primary: #2563EB;
+  --primary-dark: #1E3A8A;
+  --primary-light: #DBEAFE;
+  --background: #F8FAFC;
+  --primary-text: #0F172A;
+  --secondary-text: #64748B;
+  --positive-status: #22C55E;
+  --regular-status: #F59E0B;
+  --dangerous-status: #EF4444;
+
+  --font: 'Raleway', sans-serif;
+  --heading: 'Bricolage Grotesque', sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--font);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--primary-text);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
